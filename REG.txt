@@ -1,0 +1,3 @@
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Registration
+Productid
