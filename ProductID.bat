@@ -13,9 +13,8 @@
  exit /b
 
  :run
-@echo off
 color 2
-title ProductID
+title Product Identification Generator
 
 :A
 cls
@@ -42,13 +41,13 @@ if !_count! lss %_RNDLength% goto _loop
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do     rem"') do (
   set "DEL=%%a"
 )
-call :colorEcho 0a "========================="
+call :colorEcho 0a "==============================================="
 echo.
-call :colorEcho 04 "ProductID is !_RndAlphaNum!"
+call :colorEcho 04 "Your New Product Identification is !_RndAlphaNum!"
 echo.
-call :colorEcho 0a "========================="
+call :colorEcho 0a "==============================================="
 echo.
-pause
+pause >nul
 exit
 
 :colorEcho
